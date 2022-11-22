@@ -1,0 +1,14 @@
+<table>
+    <tr>
+        <th>row</th>
+        <th>name</th>
+        <th>email</th>
+        <th>action</th>
+    </tr>
+    <tr  *ngFor="let item of dataSource" >
+        <td>{{item.id}}</td>
+        <td>{{item.name}}</td>
+        <td>{{item.email}}</td>
+        <td><input type="button" value="show detail" (click)="showDetail(item.id)" ></td>
+    </tr>
+</table>
